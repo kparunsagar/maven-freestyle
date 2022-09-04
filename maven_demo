@@ -1,10 +1,10 @@
-   stage('Build') { 
-        // 
-    }
-    stage('Test') { 
-        // 
-    }
-    stage('Deploy') { 
-        // 
+ pipeline {
+    agent any
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
 }
